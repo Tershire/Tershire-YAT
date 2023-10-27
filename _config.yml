@@ -164,7 +164,7 @@ header_transparent: false
   home:
     heading: "Tershire"
     subheading: "Computer Vision & Controls"
-    banner: "https://drive.google.com/file/d/1nY-ncRk5uCNWjRBLLDMN3zmus7nBABNR/view?usp=drive_link"
+    # banner: "https://drive.google.com/file/d/1nY-ncRk5uCNWjRBLLDMN3zmus7nBABNR/view?usp=drive_link"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
