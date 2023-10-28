@@ -8,17 +8,17 @@ layout: default
      {{ content }}
 
   </section>
-  <section class="sidebar1" style="margin-left: 15px;">
+  <section class="sidebar" style="margin-left: 15px;">
     <!-- Get sidebar items -->
-    {%- if page.sidebar -%}
-      {%- assign sidebar = page.sidebar -%}
-    {%- elsif site.defaults[page.layout].sidebar -%}
-      {%- assign sidebar = site.defaults[page.layout].sidebar -%}
-    {%- elsif layout.sidebar -%}
-      {%- assign sidebar = layout.sidebar -%}
+    {%- if page.sidebar1 -%}
+      {%- assign sidebar = page.sidebar1 -%}
+    {%- elsif site.defaults[page.layout].sidebar1 -%}
+      {%- assign sidebar = site.defaults[page.layout].sidebar1 -%}
+    {%- elsif layout.sidebar1 -%}
+      {%- assign sidebar = layout.sidebar1 -%}
     {%- endif -%}
 
-    {%- for item in sidebar -%}
+    {%- for item in sidebar1 -%}
 
       {%- assign file = item -%}
       {%- assign array = file | split: '.' -%}
@@ -26,23 +26,23 @@ layout: default
         {%- assign file = file | append: '.html' -%}
       {%- endif -%}
 
-      {%- assign file = 'sidebar/' | append: file -%}
+      {%- assign file = 'sidebar1/' | append: file -%}
 
       {%- include {{ file }} %}
 
     {%- endfor -%}
   </section>
-  <section class="sidebar2" style="margin-left: 15px;">
+  <section class="sidebar" style="margin-left: 15px;">
     <!-- Get sidebar items -->
-    {%- if page.sidebar -%}
-      {%- assign sidebar = page.sidebar -%}
-    {%- elsif site.defaults[page.layout].sidebar -%}
-      {%- assign sidebar = site.defaults[page.layout].sidebar -%}
-    {%- elsif layout.sidebar -%}
-      {%- assign sidebar = layout.sidebar -%}
+    {%- if page.sidebar2 -%}
+      {%- assign sidebar = page.sidebar2 -%}
+    {%- elsif site.defaults[page.layout].sidebar2 -%}
+      {%- assign sidebar = site.defaults[page.layout].sidebar2 -%}
+    {%- elsif layout.sidebar2 -%}
+      {%- assign sidebar = layout.sidebar2 -%}
     {%- endif -%}
 
-    {%- for item in sidebar -%}
+    {%- for item in sidebar2 -%}
 
       {%- assign file = item -%}
       {%- assign array = file | split: '.' -%}
@@ -50,7 +50,7 @@ layout: default
         {%- assign file = file | append: '.html' -%}
       {%- endif -%}
 
-      {%- assign file = 'sidebar/' | append: file -%}
+      {%- assign file = 'sidebar2/' | append: file -%}
 
       {%- include {{ file }} %}
 
