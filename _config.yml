@@ -154,7 +154,7 @@ translate_langs:
 # this and add the path to the pages in order as they should show up
 header_pages:
   - index.html
-  - about.md
+  - about.html
   - archives.html
   # - categories.html
   # - tags.html
