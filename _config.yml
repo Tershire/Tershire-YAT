@@ -164,7 +164,8 @@ defaults:
   home:
     heading: "Tershire"
     subheading: "Computer Vision & Controls"
-    banner: "https://github.com/Tershire/tershire.github.io/blob/master/assets/images/banners/banner_home.jpeg"
+    banner: "../assets/images/banners/banner_home.jpeg""
+    # banner: "https://github.com/Tershire/tershire.github.io/blob/master/assets/images/banners/banner_home.jpeg"
     # banner: https://drive.google.com/file/d/1nY-ncRk5uCNWjRBLLDMN3zmus7nBABNR/view?usp=drive_link
 
 # Banner default settings
